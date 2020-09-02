@@ -9,4 +9,7 @@ GEM
       rails-dom-testing (~> 1.0, >= 1.0.5)
     actionpack (4.2.5.1)
       actionview (= 4.2.5.1)
-      activesuppo
+      activesupport (= 4.2.5.1)
+      rack (~> 1.6)
+      rack-test (~> 0.6.2)
+      rails-dom-testing (~> 1.0, >= 1.0.
