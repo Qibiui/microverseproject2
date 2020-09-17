@@ -57,4 +57,7 @@ GEM
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
       responders
-      thread_
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.8)
+    erubis (2.7.0)
