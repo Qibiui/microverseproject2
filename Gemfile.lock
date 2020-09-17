@@ -79,4 +79,8 @@ GEM
       actionpack (>= 4.0)
       less (~> 2.6.0)
       sprockets (> 2, < 4)
-      
+      tilt
+    loofah (2.0.3)
+      nokogiri (>= 1.5.9)
+    mail (2.6.4)
+      mime-types (>= 1.16, < 4
