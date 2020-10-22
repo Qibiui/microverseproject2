@@ -101,3 +101,7 @@ GEM
       actionmailer (= 4.2.5.1)
       actionpack (= 4.2.5.1)
       actionview (= 4.2.5.1)
+      activejob (= 4.2.5.1)
+      activemodel (= 4.2.5.1)
+      activerecord (= 4.2.5.1)
+      activesupport (= 4.2
