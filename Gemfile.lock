@@ -107,4 +107,7 @@ GEM
       activesupport (= 4.2.5.1)
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.2.5.1)
-      sprockets-r
+      sprockets-rails
+    rails-deprecated_sanitizer (1.0.3)
+      activesupport (>= 4.2.0.alpha)
+   
