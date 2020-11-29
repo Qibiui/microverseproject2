@@ -125,4 +125,8 @@ GEM
       actionpack (= 4.2.5.1)
       activesupport (= 4.2.5.1)
       rake (>= 0.8.7)
-     
+      thor (>= 0.18.1, < 2.0)
+    rake (11.1.1)
+    rdoc (4.2.2)
+      json (~> 1.4)
+    
