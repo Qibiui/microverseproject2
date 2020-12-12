@@ -162,4 +162,8 @@ GEM
       coffee-rails
     twitter-bootstrap-rails (3.2.2)
       actionpack (>= 3.1)
-      exe
+      execjs (>= 2.2.2, >= 2.2)
+      less-rails (>= 2.5.0)
+      railties (>= 3.1)
+    tzinfo (1.2.2)
+      threa
