@@ -173,4 +173,8 @@ GEM
       rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
-      binding_of_caller (>= 0.7.
+      binding_of_caller (>= 0.7.2)
+      railties (>= 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
+
+PLAT
