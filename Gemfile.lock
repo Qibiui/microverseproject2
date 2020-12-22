@@ -170,4 +170,7 @@ GEM
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
     warden (1.2.6)
-      rack (
+      rack (>= 1.0)
+    web-console (2.3.0)
+      activemodel (>= 4.0)
+      binding_of_caller (>= 0.7.
