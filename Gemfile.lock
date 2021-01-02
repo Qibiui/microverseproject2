@@ -184,4 +184,10 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise
-  devise-b
+  devise-bootstrap-views
+  jbuilder (~> 2.0)
+  jquery-rails
+  pg
+  rails (= 4.2.5.1)
+  rails_12factor
+  sass-rails (~>
