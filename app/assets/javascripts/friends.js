@@ -5,4 +5,8 @@ init_friend_lookup = function(){
     show_spinner();
   });
 
-  $('#friend-lookup-form').
+  $('#friend-lookup-form').on('ajax:after', function(event, data, status){
+    hide_spinner();
+  });
+
+  $('#friend-look
