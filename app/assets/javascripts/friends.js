@@ -17,4 +17,10 @@ init_friend_lookup = function(){
   $('#friend-lookup-form').on('ajax:error', function(event, xhr, status, error){
     hide_spinner();
     $('#friend-lookup-results').replaceWith('');
-  
+    $('#friend-lookup-errors').replaceWith('person was not found.');
+  });
+}
+
+
+
+$(document).ready
