@@ -23,4 +23,6 @@ init_friend_lookup = function(){
 
 
 
-$(document).ready
+$(document).ready(function() {
+  init_friend_lookup();
+})
