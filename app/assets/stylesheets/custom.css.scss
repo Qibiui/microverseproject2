@@ -23,4 +23,7 @@
     color: #fff !important;
     margin-top: 5%;
   }
-  .btn
+  .btn-danger:hover {
+    background-color: darken(#d9534f, 20%) !important;
+  }
+}
