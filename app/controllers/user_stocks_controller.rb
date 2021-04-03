@@ -8,4 +8,10 @@ class UserStocksController < ApplicationController
   end
 
   # GET /user_stocks/1
-  #
+  # GET /user_stocks/1.json
+  def show
+  end
+
+  # GET /user_stocks/new
+  def new
+    @user_stock
