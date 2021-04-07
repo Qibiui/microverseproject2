@@ -21,4 +21,8 @@ class UserStocksController < ApplicationController
   def edit
   end
 
-  # POST /user_stoc
+  # POST /user_stocks
+  # POST /user_stocks.json
+  def create
+    if params[:stock_id].present?
+       @user_stock = UserStoc
