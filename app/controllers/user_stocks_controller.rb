@@ -14,4 +14,11 @@ class UserStocksController < ApplicationController
 
   # GET /user_stocks/new
   def new
-    @user_stock
+    @user_stock = UserStock.new
+  end
+
+  # GET /user_stocks/1/edit
+  def edit
+  end
+
+  # POST /user_stoc
