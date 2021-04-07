@@ -25,4 +25,6 @@ class UserStocksController < ApplicationController
   # POST /user_stocks.json
   def create
     if params[:stock_id].present?
-       @user_stock = UserStoc
+       @user_stock = UserStock.new(stock_id: params[:stock_id], user: current_user)
+    else
+      stock = Stock.find_by_ticker(par
