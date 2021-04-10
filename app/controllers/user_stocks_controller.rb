@@ -32,4 +32,5 @@ class UserStocksController < ApplicationController
         @user_stock = UserStock.new(user: current_user, stock: stock)
         else
         stock = Stock.new_from_lookup(params[:stock_ticker])
-        i
+        if stock.save
+          @user_stock = UserStock.new(user: current_user, stock: st
