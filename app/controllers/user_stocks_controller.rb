@@ -36,4 +36,11 @@ class UserStocksController < ApplicationController
           @user_stock = UserStock.new(user: current_user, stock: stock)
           else
           @user_stock = nil
-          flash[:error] = "Stock is not av
+          flash[:error] = "Stock is not available"
+        end
+      end
+    end
+
+
+    respond_to do |format|
+      if @user_stock.sav
