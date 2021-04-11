@@ -43,4 +43,6 @@ class UserStocksController < ApplicationController
 
 
     respond_to do |format|
-      if @user_stock.sav
+      if @user_stock.save
+        format.html { redirect_to my_portfolio_path,
+          notice: "Stock #{@user_stock.stock
