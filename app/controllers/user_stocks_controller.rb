@@ -45,4 +45,5 @@ class UserStocksController < ApplicationController
     respond_to do |format|
       if @user_stock.save
         format.html { redirect_to my_portfolio_path,
-          notice: "Stock #{@user_stock.stock
+          notice: "Stock #{@user_stock.stock.ticker} was successfully added" }
+        format.json { render :show, status: :created, locat
