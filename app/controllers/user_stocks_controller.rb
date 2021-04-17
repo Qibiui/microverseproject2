@@ -49,4 +49,10 @@ class UserStocksController < ApplicationController
         format.json { render :show, status: :created, location: @user_stock }
       else
         format.html { render :new }
-        format.json { render json: 
+        format.json { render json: @user_stock.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PATCH/PUT /user_stocks/1
+  # PA
