@@ -55,4 +55,7 @@ class UserStocksController < ApplicationController
   end
 
   # PATCH/PUT /user_stocks/1
-  # PA
+  # PATCH/PUT /user_stocks/1.json
+  def update
+    respond_to do |format|
+      if @user_st
