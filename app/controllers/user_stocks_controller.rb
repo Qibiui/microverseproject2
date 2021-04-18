@@ -59,4 +59,5 @@ class UserStocksController < ApplicationController
   def update
     respond_to do |format|
       if @user_stock.update(user_stock_params)
-        format.html { redirect_to @user_stock, notice: 'User stock was succ
+        format.html { redirect_to @user_stock, notice: 'User stock was successfully updated.' }
+        format.json { render :show, status: :ok, location: @user_stock
