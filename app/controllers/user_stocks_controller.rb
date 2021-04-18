@@ -58,4 +58,5 @@ class UserStocksController < ApplicationController
   # PATCH/PUT /user_stocks/1.json
   def update
     respond_to do |format|
-      if @user_st
+      if @user_stock.update(user_stock_params)
+        format.html { redirect_to @user_stock, notice: 'User stock was succ
