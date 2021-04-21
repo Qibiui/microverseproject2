@@ -63,4 +63,10 @@ class UserStocksController < ApplicationController
         format.json { render :show, status: :ok, location: @user_stock }
       else
         format.html { render :edit }
-        format.json { render json: @user_stock.errors, sta
+        format.json { render json: @user_stock.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /user_stocks/1
+  # DELETE /user_stocks/
