@@ -79,4 +79,6 @@ class UserStocksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between acti
+    # Use callbacks to share common setup or constraints between actions.
+    def set_user_stock
+      @user_stock = current_user.user_stock
