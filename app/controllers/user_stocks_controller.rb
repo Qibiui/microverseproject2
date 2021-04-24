@@ -69,4 +69,8 @@ class UserStocksController < ApplicationController
   end
 
   # DELETE /user_stocks/1
-  # DELETE /user_stocks/
+  # DELETE /user_stocks/1.json
+  def destroy
+    @user_stock.destroy
+    respond_to do |format|
+      format.html { redirect_to my_por
