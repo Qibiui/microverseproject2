@@ -86,4 +86,6 @@ class UserStocksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_stock_params
-     
+      params.require(:user_stock).permit(:user_id, :stock_id)
+    end
+end
