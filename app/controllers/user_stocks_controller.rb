@@ -84,4 +84,6 @@ class UserStocksController < ApplicationController
       @user_stock = current_user.user_stocks.where(stock_id:params[:id]).first
     end
 
-    # Never trust parameters from the s
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def user_stock_params
+     
