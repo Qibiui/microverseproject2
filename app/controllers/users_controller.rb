@@ -8,4 +8,8 @@ class UsersController < ApplicationController
     @friendships = current_user.friends
   end
 
-  def se
+  def search
+    @users = User.search(params[:search_param])
+
+    if @users
+      @users = current_user.exc
