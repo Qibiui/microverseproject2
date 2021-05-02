@@ -8,4 +8,6 @@ class Stock < ActiveRecord::Base
   end
 
   def self.new_from_lookup(ticker_symbol)
-    looke
+    looked_up_stock = StockQuote::Stock.quote(ticker_symbol)
+    return nil unless looked_up_stock.name
+
