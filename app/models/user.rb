@@ -1,2 +1,4 @@
 class User < ActiveRecord::Base
-  # Include default devise modules. Oth
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :databa
