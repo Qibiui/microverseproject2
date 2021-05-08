@@ -22,4 +22,6 @@ class Stock < ActiveRecord::Base
 
     opening_price = StockQuote::Stock.quote(ticker).open
     return "#{opening_price} (Opening)" if opening_price
-    'U
+    'Unavailable'
+  end
+end
