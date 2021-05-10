@@ -14,4 +14,8 @@ class User < ActiveRecord::Base
     "Anonymous"
   end
 
-  def can_add_st
+  def can_add_stock?(ticker_symbol)
+    under_stock_limit? && !stock_already_added?(ticker_symbol)
+  end
+
+  def 
