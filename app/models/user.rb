@@ -25,4 +25,7 @@ class User < ActiveRecord::Base
   def stock_already_added?(ticker_symbol)
     stock = Stock.find_by_ticker(ticker_symbol)
     return false unless stock
-    user_stocks.whe
+    user_stocks.where(stock_id: stock.id).exists?
+  end
+  
+  def not_friends_with?(friend_i
