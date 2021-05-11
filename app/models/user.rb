@@ -23,4 +23,6 @@ class User < ActiveRecord::Base
   end
 
   def stock_already_added?(ticker_symbol)
-    
+    stock = Stock.find_by_ticker(ticker_symbol)
+    return false unless stock
+    user_stocks.whe
