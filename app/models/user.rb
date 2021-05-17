@@ -49,4 +49,10 @@ class User < ActiveRecord::Base
   end
   
   def self.last_name_matches(param)
-    matches('last_n
+    matches('last_name', param)
+  end
+  
+  def self.email_matches(param)
+    matches('email', param)
+  end
+  
