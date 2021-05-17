@@ -45,4 +45,8 @@ class User < ActiveRecord::Base
   end
   
   def self.first_name_matches(param)
-    mat
+    matches('first_name', param)
+  end
+  
+  def self.last_name_matches(param)
+    matches('last_n
