@@ -59,3 +59,4 @@ class User < ActiveRecord::Base
   def self.matches(field_name, param)
     where("lower(#{field_name}) like ?", "%#{param}%")
   end
+end
