@@ -14,4 +14,7 @@
 
       <div class="form-group">
         <%= f.label :password_confirmation, t('.confirm_new_password', :default => 'Confirm new password') %>
-        <%= f.password_field :password_confirmation
+        <%= f.password_field :password_confirmation, class: "form-control"  %>
+      </div>
+
+      <%= f.submit t('.change_my_password', :default =>
