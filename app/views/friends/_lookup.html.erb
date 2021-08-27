@@ -20,4 +20,6 @@
       <div id="friend-lookup-results" class= "well results-block col-md-10">
         <table class="search-results-table col-md-12">
           <tbody>
-            <% @users.each do |
+            <% @users.each do |user| %>
+            <tr>
+              <td><strong>Name:</strong> <%= user.full_name %><
