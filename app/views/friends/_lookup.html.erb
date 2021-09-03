@@ -27,4 +27,5 @@
               <td><strong>Profile:</strong><%= link_to "View Profile", user_path(user),
                                                         class: "btn btn-xs btn-success" %>
                 <% if current_user.not_friends_with?(user.id) %>
-                  <%= link_to "add as my friend", add_friend_
+                  <%= link_to "add as my friend", add_friend_path(user: current_user, friend: user),
+                                                      class: "btn b
