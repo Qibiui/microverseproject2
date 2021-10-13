@@ -1,4 +1,6 @@
 <div id="stock-lookup">
   <h3>Search for Stocks</h3>
   <%= form_tag search_stocks_path, remote: true, method: :get, id: 'stock-lookup-form' do %>
-  <div class="form-group row no-padding text-c
+  <div class="form-group row no-padding text-center col-md-12">
+    <div class="col-md-10">
+      <%= text_field_tag :stock, params[:stock], pl
