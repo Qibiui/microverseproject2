@@ -3,4 +3,5 @@
   <%= form_tag search_stocks_path, remote: true, method: :get, id: 'stock-lookup-form' do %>
   <div class="form-group row no-padding text-center col-md-12">
     <div class="col-md-10">
-      <%= text_field_tag :stock, params[:stock], pl
+      <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: true,
+                                                      
