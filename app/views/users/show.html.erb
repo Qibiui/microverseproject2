@@ -7,4 +7,7 @@
   <dd><%= @user.email %></dd>
 </dl>
 
-<% i
+<% if @user.stocks.size > 0 %>
+  <%= render 'stocks/list' %>
+<% else %>
+  <p class="lead">This user is no
