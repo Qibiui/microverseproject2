@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'pathname'
+
+# path to your application roo
