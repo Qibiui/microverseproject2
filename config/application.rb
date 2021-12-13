@@ -8,4 +8,5 @@ Bundler.require(*Rails.groups)
 
 module FinanceTracker
   class Application < Rails::Application
-    # Settings in config/environments/* t
+    # Settings in config/environments/* take precedence over those specified here.
+    # Application configuration should go into files in confi
