@@ -10,4 +10,5 @@
 #   inflect.uncountable %w( fish sheep )
 # end
 
-# These i
+# These inflection rules are supported but not enabled by default:
+# ActiveSupport::Inflector.inflection
