@@ -26,4 +26,5 @@ en:
       password_change:
         subject: "Password Changed"
     omniauth_callbacks:
-      failure: "Could 
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successful
