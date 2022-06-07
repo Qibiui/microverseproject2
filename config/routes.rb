@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :user_stocks, except: [:show,:edit,:update]
   resources :users, only: [:show]
   resources :friendships
-  # The priority is based upon or
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay
