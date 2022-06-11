@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   post 'add_friend', to: "users#add_friend"
 
   # Example of regular route:
-  #   
+  #   get 'products/:id' => 'catalog#view'
+
+  # Example of named route that can be invoked with purchase_url(i
