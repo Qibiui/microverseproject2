@@ -31,4 +31,9 @@ Rails.application.routes.draw do
   #       post 'toggle'
   #     end
   #
-  #     collecti
+  #     collection do
+  #       get 'sold'
+  #     end
+  #   end
+
+  # Example resource route with sub-resourc
