@@ -1,0 +1,1 @@
+class AddFirstAndLastNameToUsers < ActiveRecord::Migrati
