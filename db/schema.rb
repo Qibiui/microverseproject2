@@ -25,4 +25,8 @@ ActiveRecord::Schema.define(version: 20160405203824) do
     t.string   "name"
     t.decimal  "last_price"
     t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_stocks", force: :cascade do |t|
     t.
