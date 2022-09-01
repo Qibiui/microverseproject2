@@ -29,4 +29,6 @@ ActiveRecord::Schema.define(version: 20160405203824) do
   end
 
   create_table "user_stocks", force: :cascade do |t|
-    t.
+    t.integer  "user_id"
+    t.integer  "stock_id"
+    t.datetime "created_at", null: false
