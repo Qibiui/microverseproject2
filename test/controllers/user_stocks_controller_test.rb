@@ -11,4 +11,9 @@ class UserStocksControllerTest < ActionController::TestCase
     assert_not_nil assigns(:user_stocks)
   end
 
-  test "s
+  test "should get new" do
+    get :new
+    assert_response :success
+  end
+
+  test "should cre
