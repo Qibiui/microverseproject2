@@ -16,4 +16,6 @@ class UserStocksControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should cre
+  test "should create user_stock" do
+    assert_difference('UserStock.count') do
+      post :create, use
