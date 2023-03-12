@@ -26,3 +26,8 @@ class UserStocksControllerTest < ActionController::TestCase
 
   test "should show user_stock" do
     get :show, id: @user_stock
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :ed
