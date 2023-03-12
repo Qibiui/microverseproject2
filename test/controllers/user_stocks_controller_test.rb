@@ -21,4 +21,8 @@ class UserStocksControllerTest < ActionController::TestCase
       post :create, user_stock: { stock_id: @user_stock.stock_id, user_id: @user_stock.user_id }
     end
 
-    assert_redirected_to
+    assert_redirected_to user_stock_path(assigns(:user_stock))
+  end
+
+  test "should show user_stock" do
+    get :show, id: @user_stock
