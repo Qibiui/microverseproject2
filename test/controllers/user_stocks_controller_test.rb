@@ -18,4 +18,7 @@ class UserStocksControllerTest < ActionController::TestCase
 
   test "should create user_stock" do
     assert_difference('UserStock.count') do
-      post :create, use
+      post :create, user_stock: { stock_id: @user_stock.stock_id, user_id: @user_stock.user_id }
+    end
+
+    assert_redirected_to
