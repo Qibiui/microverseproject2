@@ -30,4 +30,8 @@ class UserStocksControllerTest < ActionController::TestCase
   end
 
   test "should get edit" do
-    get :ed
+    get :edit, id: @user_stock
+    assert_response :success
+  end
+
+  test "should update user_s
