@@ -34,4 +34,5 @@ class UserStocksControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update user_s
+  test "should update user_stock" do
+    patch :update, id: @user_stock, user_stock: { stock_id: @user_stock.stock_id, 
