@@ -36,4 +36,8 @@ class UserStocksControllerTest < ActionController::TestCase
 
   test "should update user_stock" do
     patch :update, id: @user_stock, user_stock: { stock_id: @user_stock.stock_id, user_id: @user_stock.user_id }
-    assert_redirected_to user_stock_path(assigns(:user_st
+    assert_redirected_to user_stock_path(assigns(:user_stock))
+  end
+
+  test "should destroy user_stock" do
+    assert_difference('UserStock.count',
