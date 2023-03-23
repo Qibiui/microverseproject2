@@ -40,4 +40,10 @@ class UserStocksControllerTest < ActionController::TestCase
   end
 
   test "should destroy user_stock" do
-    assert_difference('UserStock.count',
+    assert_difference('UserStock.count', -1) do
+      delete :destroy, id: @user_stock
+    end
+
+    assert_redirected_to user_stocks_path
+  end
+end
