@@ -7,4 +7,5 @@ one:
 
 two:
   ticker: MyString
-  name: M
+  name: MyString
+  last_price: 9.99
